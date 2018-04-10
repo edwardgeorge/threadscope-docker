@@ -12,7 +12,7 @@ build threadscope under fedora24 and export the binaries.
 
 extract the files by running:
 
-    $ docker build threadscope-docker .
+    $ docker build -t threadscope-docker .
     $ docker run threadscope-docker | base64 -d | tar xj
     
 this gives you threadscope, hp2pretty, and ghc-events binaries.
